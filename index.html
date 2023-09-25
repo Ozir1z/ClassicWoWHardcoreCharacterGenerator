@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WoW Classic Hardcore Character Generator</title>
+    <link rel="stylesheet" href="css/hardcore.css">
+    <link rel="icon" href="img/hardcore-cropped.png" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+      <div class="content">
+        <div class="center">
+          <img class="hardcore-logo" src="img/hardcore-cropped.png" alt="World of Warcraft Classic Hardcore">
+
+          <div class="button-center">
+            <select id="faction-choice" name="faction-choice">
+              <option value="both" selected>HORDE & ALLIANCE</option>
+              <option value="alliance">ALLIANCE ONLY</option>
+              <option value="horde">HORDE ONLY</option>
+            </select>
+          </div>
+          <div class="button-center">
+            <button class="btn" id="btn-generate-random">HERE WE GO AGAIN</button>
+          </div>
+          <div class="row">
+            <div id="loading" class="loop">
+              <div class="block">
+                <div>
+                  <div class="loading-height">
+                    <img id="loading-img" src="img/murloc-dancing-murloc.gif">
+                  </div>
+                  <p>GENERATING</p>
+                </div>
+              </div>
+            </div>
+            <div id="result" class="loop">
+              <div class="block">
+                <div>
+                  <div class="block-height">
+                    <img id="faction-img">
+                  </div>
+                  <p id="faction-text"></p>
+                </div>
+              </div>
+              <div class="block">
+                <div>
+                  <div class="block-height race-height">
+                    <img id="race-img">
+                  </div>
+                  <p id="race-text"></p>
+                </div>
+              </div>
+              <div class="block">
+                <div>
+                  <div class="block-height class-height">
+                    <img id="class-img">
+                  </div>
+                  <p id="class-text"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div> Website by <a href="https://www.twitch.tv/redundantpancake" target="_blank">RedundantPancake</a> - class art by <a href="https://twitter.com/keyboardturn" target="_blank">keyboardturn</a></div> -->
+    </main>
+    <footer>
+      Website by <a href="https://www.twitch.tv/redundantpancake" target="_blank">RedundantPancake</a> - class art by <a href="https://twitter.com/keyboardturn" target="_blank">keyboardturn</a>
+    </footer>
+	<script src="js/hardcore-v2.js"></script>
+  </body>
+</html>
